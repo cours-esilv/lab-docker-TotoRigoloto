@@ -10,4 +10,6 @@ services:
     ports:
       - "8080:80"
     environment:
-      - WS_BACK_URL=http://localhost:5000
+      - WS_BACK_URL=http://my-backend:5000
+    depends_on:
+      - my-backend
