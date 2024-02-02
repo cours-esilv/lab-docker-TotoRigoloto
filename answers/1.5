@@ -1,3 +1,1 @@
-docker logs docky-contaner
-docker rm docky-contaner
-docker run -d --name docky-contaner -e CURRENT_ENVIRONMENT=production docky
+docker run -d -p 5000:5000 -e environment=development docky-contaner docky
