@@ -1,15 +1,14 @@
 version: '3'
 services:
   my-service:
-      image: totorigoloto/back
-      ports:
-        - "5000:5000"
-      environment:
-        - BACKEND_ENV=production
-
-  my-frontend:
-    image: totorigoloto/front:latest
+    image: docky
     ports:
-      - "8080:80"
+      - "8080:5000"
     environment:
-      - WS_BACK_URL=http://localhost:5000
+      - BACKEND_ENV=production
+  my-frontend:
+    image: my-front-image
+    ports:
+      - "80:80"
+    environment:
+      - FRONTEND_ENV=development
