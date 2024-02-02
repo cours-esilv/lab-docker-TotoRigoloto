@@ -1,0 +1,2 @@
+docker exec -it docky /bin/sh
+docker run -it totorigoloto/docky:latest /bin/sh
