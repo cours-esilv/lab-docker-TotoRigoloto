@@ -7,7 +7,7 @@ services:
     environment:
       - BACKEND_ENV=production
   my-frontend:
-    image: my-front-image
+    image: front
     ports:
       - "80:80"
     environment:
