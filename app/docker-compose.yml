@@ -6,6 +6,8 @@ services:
       - "5000:5000"
     volumes:
       - ./path/on/host:/path/in/container
+    environment:
+      - BACK_ENV_VARIABLE=value
 
   my-frontend:
     image: totorigoloto/front:latest
