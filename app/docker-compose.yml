@@ -4,6 +4,8 @@ services:
     image: totorigoloto/back:latest
     ports:
       - "5000:5000"
+    volumes:
+      - ./path/on/host:/path/in/container
 
   my-frontend:
     image: totorigoloto/front:latest
@@ -11,4 +13,4 @@ services:
       - "8080:80"
     environment:
       - WS_BACK_URL=http://my-backend:5000
-    
+  
