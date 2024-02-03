@@ -11,5 +11,4 @@ services:
       - "8080:80"
     environment:
       - WS_BACK_URL=http://my-backend:5000
-    depends_on:
-      - my-backend
+    
